@@ -1,0 +1,799 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: burlywood;
+  overflow-x: hidden;
+}
+
+.checkbtn svg{
+  width: 50px;
+  height: 50px;
+  color: brown;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  margin-top: 25px;
+  border: 5px black solid;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#check{
+  display: none;
+}
+
+nav {
+  background: antiquewhite;
+  height: 100px;
+  width: 100%;
+}
+
+label.logo img{
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.container img {
+  height: 600px;
+}
+
+/* .container img {
+  height: 800px;
+} */
+
+.container .res {
+  height: 400px;
+  z-index: 1;
+}
+
+.container .fire{
+  filter: brightness(20%);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered .slogan {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: brown;
+  text-shadow: 0 0 5px azure;
+  text-decoration: underline;
+}
+
+.centered .slog {
+  font-family: "Cedarville Cursive";
+  color: brown;
+  text-shadow: 0 0 20px aliceblue;
+  font-size: 50px;
+}
+
+.centered .slog1 {
+  font-family: "Cedarville Cursive";
+  color: aliceblue;
+  text-shadow: 0 0 20px brown;
+  font-size: 80px;
+}
+
+.centered p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: aliceblue;
+  text-shadow: 0 0 5px black;
+}
+
+.centered button {
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: burlywood;
+  color: black;
+}
+
+.centered button:hover {
+  background-color: brown;
+  color: white;
+}
+
+.horizontal_dotted_line {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+}
+
+.cont{
+  margin-bottom: 800px;
+}
+
+.cont1{
+  margin-top: 1000px;
+  margin-bottom: 900px;
+}
+
+.cont h1,.cont1 h1{
+  font-family: "Cedarville Cursive";
+  text-align: center;
+  text-decoration: underline;
+  color: brown;
+  text-shadow: 0 0 5px darkslategrey;
+}
+
+.specials {
+  float: left;
+  border: 10px brown solid;
+  margin: 20px;
+  padding: 10px;
+  width: 50%;
+}
+
+.main {
+  padding: 10px;
+}
+
+.specials h1 {
+  text-align: center;
+  font-family: "Cedarville Cursive";
+  color: brown;
+  text-shadow: 0 0 5px white;
+  text-decoration: underline;
+}
+
+.menu-item {
+  margin: 0;
+}
+
+.menu-i {
+  margin: 0;
+}
+
+.float-item {
+  float: left;
+  font-family: cursive;
+  text-shadow: 0 0 4px brown;
+}
+
+.float-price {
+  float: right;
+  font-size: large;
+  font-style: oblique;
+  border: 2px brown solid;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: brown;
+  color: white;
+  margin-top: -20px;
+}
+
+.float-p {
+  float: right;
+  font-size: large;
+  font-style: oblique;
+  margin-bottom: 50px;
+}
+
+.float-i{
+  float: left;
+  width: 40%;
+  padding: 10px;
+}
+
+.float-j{
+  float: right;
+  width: 40%;
+  padding: 10px;
+  padding-right: 30px;
+  border-left: 6px solid brown;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.float-i pre{
+  float: left;
+}
+
+.float-i strong{
+  text-shadow: 0 0 5px brown;
+  font-size: large;
+}
+
+.float-j strong{
+  text-shadow: 0 0 5px brown;
+  font-size: large;
+}
+
+.float-i em{
+  width: 90px;
+  text-shadow: 0 0 5px burlywood;
+  font-size: large;
+  border: 1px black solid;
+  background-color: brown;
+  color: antiquewhite;
+  padding: 2px;
+  box-shadow: 5px 5px 5px darkslategrey;
+}
+
+.float-j em{
+  width: 90px;
+  text-shadow: 0 0 5px burlywood;
+  font-size: large;
+  border: 1px black solid;
+  background-color: brown;
+  color: antiquewhite;
+  padding: 2px;
+  box-shadow: 5px 5px 5px darkslategrey;
+}
+
+.float-i .dis{
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.float-j .dis{
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.bre{
+  display: none;
+}
+
+.specials .disc {
+  float: left;
+  margin-top: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.main .dis {
+  font-family:cursive;
+  text-align: center;
+  color: darkslategrey;
+}
+
+.sp img {
+  width: 40%;
+  height: 40%;
+  margin: 10px;
+  margin-top: 100px;
+  border-radius: 50%;
+  filter: brightness(30%);
+}
+
+.sp img:hover {
+  filter: brightness(80%);
+  border: 2px brown solid;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: darkslategrey;
+  display: flex;
+  width: 100%;
+}
+
+.footer .first {
+  float: left;
+  width: 25%;
+}
+
+.footer .first img{
+  width: 100px;
+  height: 100px;
+}
+
+.footer .eml{
+  color: azure;
+  text-decoration: none;
+  font-size: xx-small;
+}
+
+.footer .num{
+  font-size: xx-small;
+}
+
+.footer .eml:hover{
+  color: burlywood;
+  text-decoration: underline;
+}
+
+.footer .second {
+  width: 25%;
+}
+
+.sv-em img{
+  display: none;
+}
+
+.footer .second img {
+  width: 10px;
+  height: 10px;
+}
+
+.footer .third {
+  width: 25%;
+}
+
+.footer .third img{
+  width: 90%;
+  height: 40%;
+  filter: brightness(70%);
+}
+
+.footer .fourth {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.footer .fourth a{
+  filter: sepia(100%);
+}
+
+.footer .fourth a:hover{
+  filter:brightness(70%);
+}
+
+.footer .first img {
+  width: 100px;
+  height: 100px;
+}
+
+.footer .child {
+  margin: 20px;
+  text-align: center;
+}
+
+.footer .child h6 {
+  font-size: small;
+  background-color: burlywood;
+  margin-bottom: 10px;
+}
+
+hr{
+  background-color: brown;
+  height: 5px;
+}
+
+.last{
+  text-align: center;
+  color: grey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.last a{
+  color: grey;
+  text-decoration: none;
+}
+
+.last a:hover{
+  color: black;
+}
+
+.last img{
+  width: 10px;
+  height: 10px;
+  filter: grayscale(100%);
+}
+
+.conty .one{
+  float: left;
+  padding: 20px;
+}
+
+.conty .two{
+  padding: 20px;
+  text-align: center;
+  border: 5px blue solid;
+  border-style: double;
+  background-color: beige;
+}
+
+.conty .two p{
+  font-size:larger;
+}
+
+.conty .two h1{
+  font-size: xx-large;
+}
+
+.conty .two em{
+  color: darkslategrey;
+}
+
+.conty .two strong{
+  color: brown;
+}
+
+.conty .two a{
+  color: brown;
+}
+
+.conty .two a:hover{
+  color: darkslategrey;
+}
+
+.contact{
+  background-color: papayawhip;
+}
+
+.contact .form {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.contact .form em{
+  color: red;
+}
+
+.contact .form label{
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.contact .form input{
+  margin-bottom: 10px;
+  font-size: 15px;
+  width: 200px;
+}
+
+.contact .form .message{
+  height: 100px;
+}
+
+.contact .form iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.contact .form .btn{
+  color: azure;
+  background-color: brown;
+  padding: 10px;
+  width: 50%;
+}
+
+.contact .form .btn:hover{
+  color: brown;
+  background-color: azure;
+  border-style: groove;
+}
+
+.info{
+  text-align: center;
+  padding: 20px;
+}
+
+.info h6{
+  font-size: large;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px brown;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.info img{
+  width: 30px;
+  height: 30px;
+}
+
+.info button{
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 7px;
+  background-color: darkslategrey;
+  color: azure;
+}
+
+.info button:hover{
+  background-color: azure;
+  color: darkslategrey;
+}
+
+.conner{
+  background-color: palevioletred;
+}
+
+.story .le{
+  text-align: center;
+}
+
+.le button{
+  color: azure;
+  background-color: brown;
+  text-transform: uppercase;
+  border: 2px burlywood solid;
+  padding: 10px;
+}
+
+.le button:hover{
+  color: brown;
+  background-color: burlywood;
+  border: 2px green solid;
+}
+
+.story .le h1{
+  font-size: 60px;
+  color: burlywood;
+  font-family: cursive;
+  text-shadow: 0 0 2px darkslategrey;
+}
+
+.story .le h3{
+  font-size: 35px;
+}
+
+.ri .pt{
+  float: left;
+}
+
+.ri .pt1{
+  float: right;
+}
+
+.story p{
+  font-size: 30px;
+  color: azure;
+  font-family:'Times New Roman', Times, serif;
+  text-shadow: 0 0 5px brown;
+}
+
+.gra{
+  filter: grayscale(80%);
+}
+
+.rl{
+  text-align: center; 
+}
+
+.rl a{
+  margin: 20px;
+}
+
+.rl a button{
+  color: azure;
+  background-color: burlywood;
+  text-transform: uppercase;
+  border: 2px green solid;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.rl button:hover{
+  background-color: brown;
+  border: 2px burlywood solid;
+}
+
+.rl h1{
+  font-size: 30px;
+  color: burlywood;
+  font-family: cursive;
+  text-shadow: 0 0 2px darkslategrey;
+}
+
+.rl1 .im1{
+  margin: 0;
+}
+
+.rl1 .im2{
+  display: none;
+}
+/*
+ []       MEDIA QUERIES - Different Screen Sizes       [] 
+*/
+
+/* 1. SMALL SCREEN */
+
+@media screen and (max-width: 768px) {
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: blue;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    z-index: 10;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a.active,a:hover {
+    background-color: none;
+    color: white;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .centered .slog1 {
+    font-size: 50px;
+  }
+  .specials{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 450px;
+  }
+  .sp img {
+    margin-left: 150px;
+  }
+  .conty .one img{
+    width: 100%;
+  }
+  .story .le h1{
+    font-size: 40px;
+  }
+  
+  .story .le h3{
+    font-size: 25px;
+  }
+  .story .rl h1{
+    font-size: 20px;
+  }
+  
+  .story p{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 576px) {
+  label.logo img:hover{
+    transform: scale(1.2);
+  }
+  .cont .br{
+    display: none;
+  }
+  .cont1 .br{
+    display: none;
+  }
+
+  .bre{
+    display: block;
+  }
+  .contact .form input{
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+/* 2. MEDIUM SCREEN */
+
+@media screen and (min-width: 768px) {
+  .cont .br{
+    display: none;
+  }
+
+  .cont1 .br{
+    display: none;
+  }
+  .footer .child h6 {
+    font-size: x-large;
+    background-color: burlywood;
+    margin-bottom: 20px;
+  }
+  .checkbtn{
+    display: none;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  } 
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  } 
+  
+  a.active,a:hover {
+    background-color: brown;
+    color: white;
+    transition: 0.5s;
+  }
+  .contact .form .btn{
+    width: 30%;
+  }
+  .info h6{
+    font-size: x-large;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .info img{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .info button{
+    padding: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  } 
+}
+
+/* 3. LARGE SCREEN */
+
+@media screen and (min-width: 992px) {
+  .cont .c1{
+    display: none;
+  }
+  .footer .eml{
+    font-size: large;
+  }
+  
+  .footer .num{
+    font-size: large;
+  }
+  .footer .second img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer .first img{
+    width: 150px;
+    height: 150px;
+  }
+  .container .res {
+    height: 600px;
+    z-index: 1;
+  }
+  
+}
+
+/* 4. EXTRA LARGE SCREEN */
+
+@media screen and (min-width: 1200px) {
+  .container img {
+    height: 800px;
+  }
+  .float-i pre{
+    margin-bottom: 10px;
+  }
+
+  .centered .slog {
+    font-size: 80px;
+  }
+  .centered .slogan {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .centered p {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1245px) {
+  .rl1 .im2{
+    float: right;
+    display: flex;
+  }
+}
